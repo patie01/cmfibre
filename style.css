@@ -57,7 +57,8 @@ ul{list-style:none;margin:0;padding:0}
 .eyebrow{color:var(--muted);text-transform:uppercase;font-size:.85rem;margin-bottom:8px}
 .hero h1{font-size:2.4rem;margin:6px 0}
 .lead{color:var(--muted);max-width:60ch}
-.hero-visual img{border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,.06)}
+.hero-visual{max-width:480px;width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:12px}
+.hero-visual img{width:100%;height:100%;object-fit:cover;display:block;box-shadow:0 10px 30px rgba(2,6,23,.06)}
 
 /* Improve contrast for hero text */
 .hero{position:relative}
