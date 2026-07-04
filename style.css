@@ -59,6 +59,11 @@ ul{list-style:none;margin:0;padding:0}
 .lead{color:var(--muted);max-width:60ch}
 .hero-visual img{border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,.06)}
 
+/* Improve contrast for hero text */
+.hero{position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,0.48),rgba(2,6,23,0.28));pointer-events:none;border-radius:0}
+.hero .hero-copy, .hero .eyebrow, .hero .lead{color:#ffffff !important;text-shadow:0 6px 18px rgba(0,0,0,0.5)}
+
 /* Features & cards */
 .grid{display:grid;gap:20px}
 .grid-3{grid-template-columns:repeat(3,1fr)}
